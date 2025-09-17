@@ -6,10 +6,9 @@ MyContacts_ER est une application web full-stack permettant de gérer un carnet 
 
 Le dépôt est organisé en deux répertoires principaux :
 
-client/ : Contient l'interface utilisateur (UI) de l'application.
-
-server/ : Contient le backend API pour la gestion des contacts.
-
+- `client/` : Contient l'interface utilisateur (UI) de l'application.
+- `server/` : Contient le backend API pour la gestion des contacts.
+  
 ## 🚀 Prérequis
 
 Node.js (version recommandée : 14.x ou supérieure)
