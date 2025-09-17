@@ -52,9 +52,6 @@ L'application sera accessible à l'adresse http://localhost:3000
 
 Ajouter, modifier et supprimer des contacts
 
-Recherche rapide de contacts
-
-Interface utilisateur responsive
 
 ## 🛠️ Technologies utilisées
 
