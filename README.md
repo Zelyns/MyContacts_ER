@@ -11,9 +11,9 @@ Le dépôt est organisé en deux répertoires principaux :
   
 ## 🚀 Prérequis
 
-Node.js (version recommandée : 14.x ou supérieure)
+- Node.js (version recommandée : 14.x ou supérieure)
 
-npm ou yarn pour la gestion des dépendances
+- npm ou yarn pour la gestion des dépendances
 
 ## ⚙️ Installation
 1. Cloner le dépôt
