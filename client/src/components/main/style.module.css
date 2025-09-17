@@ -1,0 +1,171 @@
+/* style.module.css */
+
+/* Reset box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f8fa;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar h1 {
+  color: #333;
+  font-size: 1.5rem;
+}
+
+/* General button */
+.white_btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.white_btn:hover {
+  background-color: #007bff;
+}
+
+/* Main container */
+.main_container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.main_container h1 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Form for adding contact */
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+form input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  flex: 1;
+  min-width: 150px;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+  max-width: 100%;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Contact list */
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.2s;
+  flex-wrap: wrap; /* permet aux éléments internes de ne pas dépasser */
+}
+
+li:hover {
+  transform: translateY(-2px);
+}
+
+li div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* Avatar style */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #007bff;
+}
+
+.avatar.purple {
+  background-color: #6f42c1;
+}
+
+/* Buttons inside contact item */
+li button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+li button:hover {
+  background-color: #0056b3;
+}
+
+/* Edit form inside contact item */
+li form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+li form input {
+  flex: unset;
+  width: 100%;
+}
+
+li form button {
+  width: fit-content;
+  max-width: 100%;
+}
