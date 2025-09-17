@@ -17,7 +17,7 @@ const Login = () => {
 const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        const url = "http://localhost:8080/api/auth";
+        const url = "https://mycontacts-er-backend.onrender.com";
         const { data: res } = await axios.post(url, data, { withCredentials: true });
         window.location = "/";
     } catch (error) {
